@@ -1,9 +1,11 @@
 const baseEndpoint = "https://api.github.com";
 const usersEndpoint = `${baseEndpoint}/users`;
 const $n = document.querySelector(".name");
-const $b = document.querySelector(".blog");
+const $b = document.querySelector(".blog"); //cambio de # a .
 const $l = document.querySelector(".location");
 
+
+//Try y catch a asyn function
 async function displayUser(username) {
   try {
     $n.textContent = "cargando...";
