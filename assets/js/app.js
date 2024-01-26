@@ -5,7 +5,7 @@ const $b = document.querySelector(".blog"); //cambio de # a .
 const $l = document.querySelector(".location");
 
 
-//Try y catch a asyn function
+//Try y catch a async function
 async function displayUser(username) {
   try {
     $n.textContent = "cargando...";
@@ -15,6 +15,7 @@ async function displayUser(username) {
     $n.textContent = data.name;
     $b.textContent = data.blog;
     $l.textContent = data.location;
+    // Cambio de notación para que vaya a la constante data y traiga los datos que necesitamos y asignarlos como texto a las constantes $n, $b y $l
   } catch (err) {
     handleError(err);
   }
